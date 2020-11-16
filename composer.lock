@@ -1,0 +1,67 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "59fc24ff688750c5f1e0f31392ebc1eb",
+    "packages": [
+        {
+            "name": "aecodes/admin-panel",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oversoul/admin-panel.git",
+                "reference": "4a05ae78b66bc8e73014bf7c20b44c0bdf8c7521"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oversoul/admin-panel/zipball/4a05ae78b66bc8e73014bf7c20b44c0bdf8c7521",
+                "reference": "4a05ae78b66bc8e73014bf7c20b44c0bdf8c7521",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Aecodes\\AdminPanel\\": "src/",
+                    "Aecodes\\AdminPanel\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Amine",
+                    "email": "kurosoul.ae@gmail.com"
+                }
+            ],
+            "description": "A simplistic framework agnostic admin panel",
+            "support": {
+                "issues": "https://github.com/oversoul/admin-panel/issues",
+                "source": "https://github.com/oversoul/admin-panel/tree/master"
+            },
+            "time": "2020-11-16T12:39:22+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "aecodes/admin-panel": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

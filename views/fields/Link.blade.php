@@ -1,0 +1,1 @@
+<a {!! $buildAttributes($attributes) !!}>{!! $value !!}</a>
