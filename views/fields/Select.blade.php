@@ -6,6 +6,7 @@
 
     @if (!$multiple)
         <select
+            id="{{ $attributes['id'] }}"
             class="block appearance-none w-full border text-gray-500 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
             {{ $buildAttributes($attributes) }}
         >
@@ -14,7 +15,7 @@
     @else
         <div
             x-init="filterTags"
-            x-data='{ ...fields.multiSelect, tags: @json($value ?? []), choices: @json($options ?? []) }'
+            x-data='{ ...fields.multiSelect, tags: @json($value), choices: @json($options ?? []) }'
         >
             <template x-for="tag in tags">
                 <input type="hidden" name="{{ $attributes['name'] }}[]" :value="tag">
@@ -33,6 +34,7 @@
 
                 <input
                     @focus="displayOptions()"
+                    id="{{ $attributes['id'] }}"
                     @keydown.backspace="popTag(event)"
                     @keydown.enter.prevent="addTag(event)"
                     @click.prevent.away="showOptions = false"
